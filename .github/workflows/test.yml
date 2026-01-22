@@ -1,7 +1,7 @@
 name: Test Project
-on: 
+on:
 jobs:
-  test: 
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
