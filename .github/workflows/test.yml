@@ -15,6 +15,7 @@ jobs:
       - name: Run Tests
         run: npm test
   delpoy:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - name: Get Code
@@ -27,7 +28,7 @@ jobs:
         run: npm ci
       - name: Build Project
         run: npm run build
-      - name Deploy
+      - name: Deploy
         run: echo "I would like to deply on other server but i don't have such"
       
 
